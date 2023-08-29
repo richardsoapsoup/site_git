@@ -1,2 +1,2 @@
-# symmetrical-adventure
+# site informativo
 site sobre frameworks e github
