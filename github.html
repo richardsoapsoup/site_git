@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="estilo.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <title>Portal de informação</title>
+</head>
+<body>
+    <header>
+            <div class="box">
+            <h1><img src="https://t2.tudocdn.net/510706?w=646&h=284" alt="github"></h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="github.html">Controle de versão</a></li>
+                    <li><a href="pytest.html">Testes</a></li>
+                    <li><a href="flask.html">Flask</a></li>
+                </ul>
+            </nav>
+            </div>
+    </header>    
+    <div class="Banner2">
+        <img src="https://cdn.icon-icons.com/icons2/2368/PNG/512/github_logo_icon_143772.png">
+    </div>
+
+    <div class="Titulo"style="font-family:Times New Roman;">
+        <h1>O que é o controle de versões?</h1>
+    </div>
+
+    <div class="Descricao" style="font-family:Times New Roman;">
+        <p>"Controle de versão é um sistema que registra as mudanças feitas em um arquivo ou conjunto de arquivos ao longo do tempo de forma que você possa recuperar versões específicas"</p>
+
+        <p>O controle de versão não é necessariamente utilizado apenas na programação, podendo também ser usado na edição de
+           documentos de texto, imagens, vídeos e projetos diversos.</p>        
+        
+    </div>  
+
+    <div class="Titulo"style="font-family:Times New Roman;">
+        <h1>Tipos de sistema de controle</h1>
+    </div>
+
+    <section class="Listagem">
+        <h3 class="Titulo">Sistema local:</h3>
+        <div class="conteudo-listagem">
+        <ul class="listagem" style="font-family:Poppins, sans-serif;">            
+            <li class= "atributo">Os sistemas de controle de versão locais, armazenam em uma máquina todas as alterações em arquivos sob controle de revisão.</li><br>
+            <li class= "atributo">O rcs armazena as diferenças entre cada versão de um arquivo, e permite que sejam retornados à versões anteriores.</li><br>
+            <li class= "atributo">Exemplo: rcs (Revision Control System)</li></strong><br>
+
+        </ul>
+        <img class="lista-img" src="https://git-scm.com/figures/18333fig0101-tn.png" alt="gitgithub">
+
+    </section><br><br>
+    
+    <section class="Listagem">
+        <h3 class="Titulo">Sistema centralizado:</h3>
+        <div class="conteudo-listagem">
+        <ul class="listagem" style="font-family:Poppins, sans-serif;">            
+            <li class= "atributo">Permite que diversos desenvolvedores possam trabalhar juntos em um mesmo projeto.</li><br>
+            <li class= "atributo">Possui um servidor central que armazena as versões dos arquivos, os clientes fazem cópias desses arquivos, sua principal desvantagem é a dependência do servidor</li><br>
+            <li class= "atributo">Exemplos: CVS, Subversion</li></strong><br>
+
+        </ul>
+        <img class="lista-img" src="https://git-scm.com/figures/18333fig0102-tn.png" alt="gitgithub">
+
+    </section><br><br>
+
+    <section class="Listagem">
+        <h3 class="Titulo">Sistema distribuido:</h3>
+        <div class="conteudo-listagem">
+        <ul class="listagem" style="font-family:Poppins, sans-serif;">            
+            <li class= "atributo">Ao invés de fazer cópias das últimas versões, todo o repositório é copiado. Assim, qualquer máquina
+pode ajudar o servidor a se recuperar.</li><br>
+            <li class= "atributo">Permite o trabalho em conjunto com diversas pessoas e a criação de fluxos de trabalhos
+diferentes do que são usados nos sistemas centralizados.</li><br>
+            <li class= "atributo">Exemplos: git, mercural, Darcs.</li></strong><br>
+
+        </ul>
+        <img class="lista-img" src="https://jkolb.com.br/wp-content/uploads/2018/04/distribuido.png" alt="gitgithub">
+
+    </section><br><br>
+
+    <div class="Banner">
+        <img src="https://git-scm.com/images/logos/downloads/Git-Icon-1788C.png">
+    </div>
+
+    <div class="Titulo"style="font-family:Times New Roman;">
+        <h1>O que é o git?</h1>
+    </div>
+
+    <div class="Descricao" style="font-family:Times New Roman;">
+        <p>O git é um sistema de controle de versões distribuído, usado principalmente no desenvolvimento de software, mas pode ser usado para registrar o histórico de edições de qualquer tipo de arquivo.</p>
+
+    </div>
+
+    <div class="Titulo"style="font-family:Times New Roman;">
+        <h1>Como funciona o git?</h1>
+    </div>
+
+    <div class="Descricao" style="font-family:Times New Roman;">
+        <p>Uma das principais características do git está no fato de armazenar diferenças entre os arquivos como a maioria dos VCS faz, são armazenados snapshots que funcionam como uma fotografia daquele sistema de arquivos naquele momento.</p>
+
+        <p>Todos os commits possuem checksum, isso garante integridade já que antes de armazenar as informações essa soma é calculada e podem ser identificados problemas.</p>
+
+        <p>Os arquivos do git estão sempre em um dos três estados:</p>
+
+        <p>Consolidado (commited) - Estão
+        armazenados em sua base local</p>
+
+        <p>Modificado (modified) - Arquivo sofreu
+        mudança mas não foi commitado</p>
+
+        <p>Preparado (staged) - Arquivo marcado para
+        fazer parte do próximo snapshot</p>
+
+    </div>
+
+    <section class="Listagem">
+        <h3 class="Titulo">Principais comandos do git:</h3>
+        <div class="conteudo-listagem">
+        <ul class="listagem" style="font-family:Poppins, sans-serif;">            
+            <li class= "atributo">Git init(inicialização)</li><br>
+            <li class= "atributo">Git status(checar status)</li><br>
+            <li class= "atributo">Git add(realizar alteração)</li></strong><br>
+            <li class= "atributo">Git commit(finalizar ação)</li><br>
+        </ul>
+        <img class="lista-img" src="https://i.stack.imgur.com/QaeAZ.png" alt="gitgithub">
+    </section><br><br>    
+
+    <div class="Banner2">
+        <img src="https://enotas.com.br/blog/wp-content/uploads/2021/02/GitHub.jpg">
+    </div>
+
+    <div class="Titulo"style="font-family:Times New Roman;">
+        <h1>O que é o github?</h1>
+    </div>
+
+    <div class="Descricao" style="font-family:Times New Roman;">
+        <p>O GitHub é uma plataforma de hospedagem de código-fonte e arquivos com controle de versão usando o Git. Ele permite que programadores, utilitários ou qualquer usuário cadastrado na plataforma contribuam em projetos privados e/ou Open Source de qualquer lugar do mundo.</p>
+
+    </div>
+
+</body>
+<footer class="rd">
+  
+    <img src="https://t2.tudocdn.net/510706?w=646&h=284" alt="github">
+
+  
+</footer>
+  
+</html>
+
+            
+
